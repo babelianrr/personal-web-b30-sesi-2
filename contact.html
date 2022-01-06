@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Inquiry Form</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar p-3">
+        <div class="nav-block fs">
+          <a href="https://www.youtube.com/c/TheBabelianChannel"><img class="nav-img" src="assets/logo.jpg"
+              alt="TBC logo"></a>
+          <ul>
+            <a class="me-8" href="index.html">Home</a>
+            <a class="ms-8 me-8" href="blog.html">Blog</a>
+            <a class="ms-8" href="https://saweria.co/babelianrr">Donate</a>
+          </ul>
+        </div>
+        <div class="nav-block fe">
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </nav>
+
+      <div class="form">
+        <h2 class="form-t">Inquiry Form</h2>
+        <form>
+          <div style="margin-bottom: 10px;">
+            <label for="name"><strong>Name</strong><span style="color: #ff0000;"><small>*</small></span></label><br>
+            <input class="input" id="name" type="text" value="">
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="email"><strong>Email</strong><span style="color: #ff0000;"><small>*</small></label><br>
+            <input class="input" id="email" type="email" value="">
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="select"><strong>Select Subject</strong><span
+                style="color: #ff0000;"><small>*</small></label><br>
+            <select id="select" class="input" value="">
+              <option></option>
+              <option>FAQ</option>
+              <option>Accounts</option>
+              <option>Game Services</option>
+              <option>In Game Purchases</option>
+              <option>Report Abuses</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="text"><strong>Your Message</strong><span style="color: #ff0000;"><small>*</small></label><br>
+            <textarea id="message" class="input" value=""></textarea>
+          </div>
+          <div style="margin-bottom: 10px;">
+            <button type="submit" class="s-btn" onclick="submitData()"><strong>Submit</strong></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="assets/index.js"></script>
+  </body>
+
+</html>
