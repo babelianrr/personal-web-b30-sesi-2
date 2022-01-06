@@ -3,88 +3,80 @@
   <head>
     <meta charset="UTF-8">
     <title>Creating Blog Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
 
   <body>
-    <!-- NavBar -->
-    <nav>
-      <div class="left-side">
-        <a href="index.html">
-          <img src="assets/logo.jpg" alt="logo" />
-        </a>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="blog.html" class="list-active">Blog</a>
-          </li>
-        </ul>
-      </div>
-      <div class="right-side">
-        <a href="contact.html"> Contact Me </a>
-      </div>
-    </nav>
+    <div class="container">
 
-    <!-- Blog -->
-    <!-- Form -->
-    <div class="blog">
-      <div class="blog-form">
-        <div class="form-container">
-          <form onsubmit="addBlog(event)">
-            <h1>Create Post Blog</h1>
-            <div>
-              <label for="input-blog-title">Title</label>
-              <input id="input-blog-title" />
-            </div>
-            <div>
-              <label for="input-blog-content">Content</label>
-              <textarea id="input-blog-content"></textarea>
-            </div>
-            <div>
-              <label>Upload Image</label>
-              <div class="input-blog-image-group">
-                <label for="input-blog-image">
-                  <p>Attach File</p>
-                  <img src="assets/file.png" alt="file" />
-                </label>
-                <input type="file" id="input-blog-image" hidden />
-              </div>
-            </div>
-            <div class="button-group">
-              <button>Post Blog</button>
-            </div>
-          </form>
+      <!-- NavBar -->
+      <nav class="navbar p-3">
+        <div class="nav-block fs">
+          <a href="https://www.youtube.com/c/TheBabelianChannel"><img class="nav-img" src="assets/logo.jpg"
+              alt="TBC logo"></a>
+          <ul>
+            <a class="me-8" href="index.html">Home</a>
+            <a class="ms-8 me-8" href="blog.html">Blog</a>
+            <a class="ms-8" href="https://saweria.co/babelianrr">Donate</a>
+          </ul>
         </div>
-      </div>
-      <hr class="line" />
-      <div id="contents" class="blog-list">
-        <!-- dynamic content would be here -->
-        <div class="blog-list-item">
-          <div class="blog-image">
-            <img src="assets/blog-img.png" alt="" />
+        <div class="nav-block fe">
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </nav>
+
+      <!-- Blog -->
+      <!-- Form -->
+      <div class="blog">
+        <div class="form">
+          <div class="form-container">
+            <form onsubmit="addBlog(event)">
+              <h2 class="form-t">Create Post Blog</h2>
+              <div class="mb-10">
+                <label for="input-blog-title"><strong>Title</strong><span style="color: #ff0000;"></span></label>
+                <input class="input" id="input-blog-title" />
+              </div>
+              <div class="mb-10">
+                <label for="input-blog-content"><strong>Content</strong><span style="color: #ff0000;"></span></label>
+                <textarea class="t-area" id="input-blog-content"></textarea>
+              </div>
+              <div class="mb-10">
+                <label><strong>Upload Image</strong></label>
+                <input class="input" type="file" id="input-blog-image" />
+              </div>
+              <div class="mb-10">
+                <button class="s-btn">Post Blog</button>
+              </div>
+            </form>
           </div>
-          <div class="blog-content">
-            <div class="btn-group">
-              <button class="btn-edit">Edit Post</button>
-              <button class="btn-post">Post Blog</button>
+        </div>
+        <hr class="hr" />
+        <div id="contents" class="blog-list">
+          <!-- dynamic content would be here -->
+          <div class="blog-list-item">
+            <div class="blog-image">
+              <img src="assets/logo.jpg" alt="logo" />
             </div>
-            <h1>
-              <a href="blog-detail.html" target="_blank">Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a>
-            </h1>
-            <div class="detail-blog-content">
-              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            <div class="blog-content">
+              <div class="btn-group">
+                <button class="btn-edit">Edit Post</button>
+                <button class="btn-post">Post Blog</button>
+              </div>
+              <h1>
+                <a href="blog-detail.html" target="_blank">Welcome to Rajawali's Personal Blog</a>
+              </h1>
+              <div class="detail-blog-content">
+                21 Jan 2022 (Fri) 14:59 WIB | Babelian
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Aperiam exercitationem nesciunt accusamus
+                  excepturi corporis</em>, nulla libero harum voluptates iusto ipsum labore autem enim ducimus hic
+                repellat dicta sint animi culpa veritatis dolores rem, quisquam iure! Laborum explicabo voluptatem
+                animi, aliquid asperiores culpa adipisci debitis reprehenderit saepe fugit perferendis accusantium omnis
+                ea dolorum. Odio tempora hic repellendus quas beatae eius voluptatibus aut. Maiores fugit dolor harum.
+                Hic ipsum architecto voluptate.
+              </p>
             </div>
-            <p>
-              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
-              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
-              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
-              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Quam, molestiae
-              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
-              eligendi debitis?
-            </p>
           </div>
         </div>
       </div>

@@ -71,7 +71,7 @@ function addBlog(event) {
     title: title,
     content: content,
     image: image,
-    author: 'Kim Subjong',
+    author: 'Babelian',
     created_at: new Date(),
   }
 
@@ -112,8 +112,8 @@ function renderBlog() {
       `;
   }
 
+  setInterval(() => (
+    renderBlog()
+  ), 5000)
 }
 
-// setInterval(() => (
-//   renderBlog()
-// ), 5000)
