@@ -117,3 +117,35 @@ function renderBlog() {
   ), 5000)
 }
 
+function submitData() {
+
+  let userName = document.getElementById("name").value;
+  let userEmail = document.getElementById("email").value;
+  let userSubject = document.getElementById("select").value;
+  let userMsg = document.getElementById("message").value;
+
+  if (userName == "" || userEmail == "" || userSubject == "" || userMsg == "") {
+    alert("Please fill all the forms.");
+  } else {
+    let dataObj = {
+      name: userName,
+      email: userEmail,
+      subject: userSubject,
+      message: userMsg
+    }
+
+    console.log(dataObj);
+
+    let emailReceiver = "babelianrr@gmail.com";
+
+    let a = document.createElement('a');
+
+    a.href = `mailto: ${emailReceiver}?subject=${userSubject}&body=Hello, my name is ${userName}. ${userMsg}\n Please contact me through this email: ${userEmail}\n\n Thank you.`;
+
+    a.click();
+
+    alert("Congratulations, your inquiry has been sent!");
+  }
+
+
+}
